@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhimzyWriter — a writing app for novelists on the Mac</title>
+<meta name="description" content="WhimzyWriter is a native macOS app for writing fiction: chapters and scenes, a calm editor, snapshots, a story codex, and AI tools that propose changes for you to review.">
+<link rel="icon" type="image/png" href="./assets/icon-64.png">
+<link rel="apple-touch-icon" href="./assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/site.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="./"><img src="./assets/icon-64.png" alt="" width="32" height="32">WhimzyWriter</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="./editor/">Writing</a></li>
+      <li><a href="./agents/">AI tools</a></li>
+      <li><a href="./world/">World building</a></li>
+      <li><a href="./philosophy/">Principles</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <h1 id="hero-title">A quiet place to write your novel.</h1>
+    <p class="lede">WhimzyWriter is a writing app made for the Mac. Organize your book into chapters and scenes, write on a calm canvas, keep a codex of your world, and ask AI for help only when you want it. AI suggests; you decide what stays.</p>
+    <p class="availability"><strong>Coming to the Mac App Store.</strong> Requires a Mac with Apple Silicon.</p>
+  </div>
+
+  <figure class="window">
+    <div aria-hidden="true">
+      <div class="window-bar">
+        <div class="lights"><span></span><span></span><span></span></div>
+        <div class="modes"><span class="on">Write</span><span>Codex</span><span>Outline</span><span>Timeline</span><span>Notes</span></div>
+      </div>
+      <div class="window-body">
+        <div class="tree">
+          <p class="ch">1. The Lighthouse</p>
+          <p class="sc"><span>Arrival</span><small>2,140</small></p>
+          <p class="sc on"><span>The keeper</span><small>1,860</small></p>
+          <p class="sc"><span>Storm warning</span><small>2,410</small></p>
+          <p class="ch">2. Low Tide</p>
+          <p class="sc"><span>The causeway</span><small>1,320</small></p>
+          <p class="sc"><span>What Ada found</span><small>980</small></p>
+        </div>
+        <div class="canvas">
+          <h3>The keeper</h3>
+          <p>The lamp room smelled of paraffin and salt. Ada climbed the last turn of the stair and found him already waiting, his coat still wet from the rocks.</p>
+          <p>“You came back,” he said. She <span class="mark-del">looked at him for a long time and did not say anything</span> <span class="mark-ins">held his gaze until the silence answered for her</span>.</p>
+          <div class="review">
+            <span class="what">Make Concise: 1 change</span>
+            <span class="btn">Reject</span>
+            <span class="btn accept">Accept</span>
+          </div>
+        </div>
+      </div>
+      <div class="status"><span>1,860 words in scene, 8,710 in book</span><span>Saved</span></div>
+    </div>
+    <figcaption class="window-caption">An AI rewrite waits for review. Nothing changes in your scene until you accept it, and one undo puts the original back.</figcaption>
+  </figure>
+</section>
+
+<section class="chapter" aria-labelledby="write-title">
+  <header>
+    <h2 id="write-title">Built for writing a book</h2>
+    <p><a href="./editor/">More about writing</a></p>
+  </header>
+  <div class="chapter-body">
+    <dl class="features">
+      <div>
+        <dt>Chapters and scenes</dt>
+        <dd>Each project is one book. Arrange it in a sidebar tree, drag scenes between chapters, and see word counts for every scene and chapter.</dd>
+      </div>
+      <div>
+        <dt>A calm, paper-like editor</dt>
+        <dd>Full character and paragraph formatting, headings, scene breaks and drop caps. Work saves itself as you type.</dd>
+      </div>
+      <div>
+        <dt>Snapshots before big revisions</dt>
+        <dd>Save a named version of a chapter, preview it later, and restore it without losing what you have now.</dd>
+      </div>
+      <div>
+        <dt>Export when you are ready</dt>
+        <dd>Send a whole book, a chapter or a scene to Word (DOCX), RTF, Markdown or plain text, with italics, headings and scene breaks kept.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="ai-title">
+  <header>
+    <h2 id="ai-title">AI that asks first</h2>
+    <p><a href="./agents/">More about the AI tools</a></p>
+  </header>
+  <div class="chapter-body">
+    <dl class="features">
+      <div>
+        <dt>Your choice of model</dt>
+        <dd>Connect Anthropic, any OpenAI-compatible service (including Ollama or LM Studio on your own Mac), or Apple’s on-device model where Apple Intelligence is available. Or use no AI at all.</dd>
+      </div>
+      <div>
+        <dt>Chat about your manuscript</dt>
+        <dd>Ask about the scene in front of you, or let chat find relevant passages from anywhere in the book.</dd>
+      </div>
+      <div>
+        <dt>Rewrites you review</dt>
+        <dd>Expand, tighten, change tone or continue a passage. Each result arrives as a diff you accept or reject.</dd>
+      </div>
+      <div>
+        <dt>You can see what AI wrote</dt>
+        <dd>Accepted AI text keeps an authorship mark. Turn on the underline to see it, and check the AI share in the status bar.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="world-title">
+  <header>
+    <h2 id="world-title">Keep your world straight</h2>
+    <p><a href="./world/">More about world building</a></p>
+  </header>
+  <div class="chapter-body">
+    <p>Switch modes from the toolbar or with <kbd>⌘1</kbd>–<kbd>⌘5</kbd>. The <strong>Codex</strong> holds your characters, places, items, factions, concepts and glossary terms, and shows every scene that mentions them. The <strong>Outline</strong> board lays out scene cards by chapter with their status. The <strong>Timeline</strong> tracks when things happen in the story, and <strong>Notes</strong> keep everything else.</p>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="start-title">
+  <header>
+    <h2 id="start-title">The first few minutes</h2>
+  </header>
+  <div class="chapter-body">
+    <ol class="steps">
+      <li><div><strong>Say hello</strong><span>A short welcome explains what WhimzyWriter does and what stays on your Mac.</span></div></li>
+      <li><div><strong>Pick an AI provider, or skip it</strong><span>Add a key or a local server now, or later in Settings. Everything except the AI tools works without one.</span></div></li>
+      <li><div><strong>Choose how search works</strong><span>Keyword search is the default. Search by meaning is opt-in, and nothing is downloaded or sent for indexing unless you choose it.</span></div></li>
+      <li><div><strong>Start your first project</strong><span>Give it a title and start writing.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="coming-title">
+  <header>
+    <h2 id="coming-title">Coming later</h2>
+    <p>Planned after the first release, in no promised order.</p>
+  </header>
+  <div class="chapter-body">
+    <ul class="coming">
+      <li><strong>Manuscript analysis</strong>, such as pacing and repetition</li>
+      <li><strong>More export formats</strong>: manuscript PDF, EPUB, ODT, HTML, LaTeX and more</li>
+      <li><strong>Project packages</strong> for backup and sharing, and branches</li>
+      <li><strong>A per-project dictionary</strong> for spellcheck</li>
+      <li><strong>Comics</strong>: page and panel layouts</li>
+      <li><strong>Google Drive backup</strong></li>
+      <li><strong>Sharing excerpts</strong> to Bluesky and X</li>
+      <li><strong>Writing together</strong> with collaborators</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>WhimzyWriter for macOS. Requires Apple Silicon.</p>
+    <ul>
+      <li><a href="./editor/">Writing</a></li>
+      <li><a href="./agents/">AI tools</a></li>
+      <li><a href="./world/">World building</a></li>
+      <li><a href="./philosophy/">Principles</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="./js/site.js"></script>
+</body>
+</html>

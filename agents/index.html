@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI tools in WhimzyWriter</title>
+<meta name="description" content="How WhimzyWriter uses AI: your choice of provider, chat about your manuscript, inline rewrites and whole-text tools that propose changes for review, and opt-in semantic search.">
+<link rel="icon" type="image/png" href="../assets/icon-64.png">
+<link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="wordmark" href="../"><img src="../assets/icon-64.png" alt="" width="32" height="32">WhimzyWriter</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="../editor/">Writing</a></li>
+      <li><a href="../agents/" aria-current="page">AI tools</a></li>
+      <li><a href="../world/">World building</a></li>
+      <li><a href="../philosophy/">Principles</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="page-intro">
+  <h1>Help when you ask. Never behind your back.</h1>
+  <p class="lede">AI in WhimzyWriter is optional. When you use it, it proposes and you review. No AI change reaches your manuscript until you accept it, and the words it wrote stay marked.</p>
+</div>
+
+<section class="chapter" aria-labelledby="providers">
+  <header>
+    <h2 id="providers">Choose your model</h2>
+    <p>Set up in Settings, or during the first launch.</p>
+  </header>
+  <div class="chapter-body">
+    <dl class="features">
+      <div>
+        <dt>Anthropic</dt>
+        <dd>Add your Anthropic API key to use Claude models.</dd>
+      </div>
+      <div>
+        <dt>OpenAI-compatible services</dt>
+        <dd>OpenAI, OpenRouter, or any service with an OpenAI-compatible API and a base URL you enter.</dd>
+      </div>
+      <div>
+        <dt>Local models on your Mac</dt>
+        <dd>Point WhimzyWriter at Ollama or LM Studio running on your Mac. No key needed.</dd>
+      </div>
+      <div>
+        <dt>Apple on-device</dt>
+        <dd>On Macs with Apple Intelligence turned on, use Apple’s on-device model. It’s hidden where it isn’t available.</dd>
+      </div>
+    </dl>
+    <p style="margin-top:1.75rem">Pick one model for writing and chat and, if you like, a cheaper or local one for summaries and analysis. Either choice can be changed per project. Test Connection checks a provider before you rely on it, and a usage view shows the tokens used per provider and model.</p>
+    <p class="note">API keys are kept only in your Mac’s Keychain. They’re never shown again after you save them, and never logged or exported.</p>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="chat">
+  <header>
+    <h2 id="chat">Chat about your book</h2>
+    <p>In the inspector’s Chat tab.</p>
+  </header>
+  <div class="chapter-body">
+    <p>Ask “Is the pacing too slow here?” and watch the answer stream in. Choose what the AI sees for each message: nothing but the conversation, your selection, the current scene, the current chapter, the whole manuscript, or the relevant passages found by search. A token estimate shows how much you’re sending, and context is never cut without telling you.</p>
+    <ul class="plain-list">
+      <li>Keep several conversations per project and come back to them.</li>
+      <li>Stop a reply, retry a failed one, or regenerate and flip between versions.</li>
+      <li>Copy a reply, or insert it at your cursor, where it’s marked as AI-written and one undo removes it.</li>
+      <li>Characters and places you mention from your <a href="../world/#codex">codex</a> are added as a story bible, so answers stay true to your world.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="tools">
+  <header>
+    <h2 id="tools">Writing tools</h2>
+    <p>From the AI menu, the formatting bar, or a right-click.</p>
+  </header>
+  <div class="chapter-body">
+    <h3 style="margin-bottom:0.75rem">On a selection</h3>
+    <div class="table-scroll">
+      <table class="catalog">
+        <thead><tr><th scope="col">Tool</th><th scope="col">What it does</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Expand</th><td>Rewrites the passage longer, with more detail, in the same voice.</td></tr>
+          <tr><th scope="row">Make Concise</th><td>Tightens the passage while keeping its meaning and voice.</td></tr>
+          <tr><th scope="row">Change Tone</th><td>Rewrites it formal, casual, lyrical, dramatic, playful, dark, or a tone you describe.</td></tr>
+          <tr><th scope="row">Continue Writing</th><td>Adds one to three paragraphs at the cursor, following what came before.</td></tr>
+          <tr><th scope="row">Custom Instruction</th><td>Rewrites the passage the way you ask.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 style="margin:2rem 0 0.75rem">On a scene, chapter or the whole book</h3>
+    <div class="table-scroll">
+      <table class="catalog">
+        <thead><tr><th scope="col">Tool</th><th scope="col">What it does</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Summarize Scene</th><td>Proposes a two-to-four-sentence summary of what happens.</td></tr>
+          <tr><th scope="row">Generate Synopsis</th><td>Proposes a one-paragraph synopsis for the project.</td></tr>
+          <tr><th scope="row">Check Continuity</th><td>Reports possible contradictions with a quote, the problem, a suggestion and how serious it is, taking your codex into account.</td></tr>
+          <tr><th scope="row">Split into Scenes</th><td>Proposes where a long scene could be divided, with titles.</td></tr>
+          <tr><th scope="row">Outline from Chapters</th><td>Writes an outline of your chapters and their beats to read.</td></tr>
+          <tr><th scope="row">Find Characters &amp; Places</th><td>Suggests codex entries for the people and places in your manuscript.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Tools run in the background. The Tasks tab shows what’s running, lets you cancel or retry, and tells you if something was interrupted when you quit.</p>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="review">
+  <header>
+    <h2 id="review">Review, then accept</h2>
+  </header>
+  <div class="chapter-body">
+    <p>Every AI change is a proposal. Rewrites show inline as a diff, the old words <span class="mark-del">struck through</span> and the new ones <span class="mark-ins">highlighted</span>. Larger proposals open a review sheet where you accept or reject each change. After you accept, one undo puts the original back, and structural changes such as splitting a scene can always be undone.</p>
+    <p>Accepted AI text keeps an authorship mark. Turn on <em>Show AI authorship</em> in Settings to see it <span class="mark-ai">underlined like this</span>, and check the status bar for the share of the manuscript the AI wrote.</p>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="search">
+  <header>
+    <h2 id="search">Semantic search</h2>
+    <p>Off until you turn it on.</p>
+  </header>
+  <div class="chapter-body">
+    <p>Search by meaning finds the right scene even when the words differ, and lets chat pull in passages from twenty chapters back by itself. The search panel switches between Keyword and Meaning, and each result shows the scene, a snippet and how relevant it is.</p>
+    <div class="table-scroll">
+      <table class="catalog">
+        <thead><tr><th scope="col">Option</th><th scope="col">How it works</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Keyword only</th><td>The default. Full-text search, with nothing downloaded and nothing sent anywhere.</td></tr>
+          <tr><th scope="row">Apple built-in</th><td>Uses the language model built into macOS and works offline. System assets are downloaded only if you agree.</td></tr>
+          <tr><th scope="row">My AI provider</th><td>Uses the embeddings of an OpenAI-compatible provider you’ve set up, such as OpenAI, Ollama or LM Studio. Your text is sent to that provider for indexing.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The index updates a few seconds after you stop typing, and switching options rebuilds it. A downloadable on-device model is planned as another option.</p>
+  </div>
+</section>
+
+<section class="chapter" aria-labelledby="next">
+  <header>
+    <h2 id="next">Keep reading</h2>
+  </header>
+  <div class="chapter-body">
+    <ul class="next-pages">
+      <li><a href="../world/">World building</a></li>
+      <li><a href="../philosophy/">Principles</a></li>
+      <li><a href="../editor/">Writing</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>WhimzyWriter for macOS. Requires Apple Silicon.</p>
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../editor/">Writing</a></li>
+      <li><a href="../agents/">AI tools</a></li>
+      <li><a href="../world/">World building</a></li>
+      <li><a href="../philosophy/">Principles</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>
